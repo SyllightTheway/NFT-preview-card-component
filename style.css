@@ -1,0 +1,156 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue:hsl(215, 51%, 70%);;
+}
+
+body {
+    text-align: center;
+
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+#card {
+    background-color: var(--dark-blue);
+
+    margin: 4% 20%;
+
+    /* max-width: 24vmax; */
+    max-width: 325px;
+
+    border-radius: 15px;
+}
+
+#card #image {
+    padding: 5%;
+}
+#card #image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#card #description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    padding: 5%;
+
+}
+#card #description .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 7px 0;
+}
+#card #description .title:hover{
+    color: var(--cyan);
+}
+#card #description .paragraph {
+    font-size: 1em;
+    font-weight: 200;
+    text-align: left;
+    color: var(--soft-blue);
+
+    margin: 0;
+}
+
+#card #info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 7px 17px;
+}
+#card #info p {
+    margin: 0;
+}
+#card #info #price {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cyan);
+
+    width: 95px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#card #info #time {
+    font-weight: 400;
+    color: var(--soft-blue);
+
+    width: 95px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card #creator {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    padding: 10px 17px;
+}
+#card #creator .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+#card #creator .name {
+    font-size: 1em;
+    font-weight: 200;
+    text-align: left;
+    color: var(--soft-blue);
+}
+#card #creator .name a {
+    color: var(--white);
+    font-weight: 500;
+}
+#card #creator .name a:hover{
+    color: var(--cyan);
+}
+
+.line {
+    border-color: var(--blue);
+    border-style: none none solid none;
+}
